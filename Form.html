@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: poppins;
+        }
+
+        h1 {
+            color: #791e94;
+            font-family: poppins;
+        }
+
+        p {
+            color: black;
+            font-family: poppins;
+        }
+    </style>
+</head>
+
+<body bgcolor="#fffff2">
+    
+    <center>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/EsaskuVHIfQ" title="Career Fair Spring 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>Job Fair Registration</h1>
+        <p><b>Enter the following details to register...</b></p>
+    
+        <form>
+            <label for="Fname">Full name</label>
+             <input type="text" id="Fname" name="Fname" placeholder="Enter full name"> <br><br> 
+                <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="Enter email address"> <br> <br>
+                <label for="Qualification options">Highest qualification</label>
+                <select name="Qualification options" id="Qualification options">
+                    <option value="ug">Under graduate</option>
+                    <option value="pg">Post graduate</option>
+                </select> <br><br> 
+                <label for="yexp">Year of Experience</label> <input type="number" id="yexp" name="yexp" placeholder="Enter in numeric"> <br> <br>
+            <label for=""> <b>Willing to relocate?</b></label><br><input type="radio"><label for="">Yes</label> <input type="radio" <label for="">No</label> <br> <br>
+            </b> <b><label for="position">Select the positions applying for </label> </b> <br><input type="checkbox"> <label for="">Front-end developer</label> <br> <input type="checkbox"> <label for="">Back-end developer</label>
+            <br><input type="checkbox"> <label for="">Fullstack developer</label> <br> <br> 
+            <input type="button" value="Submit" onclick="alert(`Are you sure? Do you want to submit?`)">
+        </form> <br> <br>
+        <audio controls>
+            <source src="relaxing-145038.mp3">
+        </audio>
+    
+    </center>
+
+</body>
+
+</html>

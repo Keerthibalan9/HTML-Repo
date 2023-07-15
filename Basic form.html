@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the file</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 { font-family: poppins; color:#54BAB9;}
+        p { font-family: poppins; color:#330047;}
+th, td {
+  border: 2px solid black; border-collapse: collapse;
+}
+table{
+    border: 4px solid black; border-collapse: collapse;
+}
+    </style>
+</head>
+<body bgcolor="#F9F9F9"> <br>
+        <p> <ins>Sign up </ins> </p>
+        <form action="signup">
+<label for="uname">First name:</label> <input type="text" id="uname" name="uname" placeholder="Enter you firstname"> <br> <br>
+<label for="lname">Last name:</label> <input type="text" id="lname" name="lname" placeholder="Enter you lastname"> <br> <br>
+<label for="gender">Gender</label>
+<input type="radio" id="gend" name="gender">
+  <label for="gender">Male</label> 
+  <input type="radio" id="gend" name="gender">
+  <label for="gender">Female</label>
+  <br> <br>
+  <label for="mailid">Email</label>
+  <input type="email" id="email" name="mailid"> <br> <br>
+  <label for="dob">Date of Birth:</label>
+  <input type="date"> <br> <br>
+  <label for="Add">Address</label> <br>
+  <textarea id="Address" name="Address" rows="4" cols="50"></textarea> <br> <br>
+<input type="button" value="Submit" onclick="alert(`By this you are registering with us.`)">
+        </form>
+</body>
+</html>

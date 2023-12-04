@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .title {
+            color: #1566A8;
+            font-family: poppins;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .stepShow {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .stepName {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .infoBanner {
+            color: #ffffff;
+            font-family: poppins;
+            font-size: 16px;
+            font-weight: 400;
+            background: #1566A8;
+            padding: 0px 16px;
+            border-radius: 4px;
+        }
+
+        .pageHighlight {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .page {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .pageTitle {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .question {
+            color: #00203B;
+            font-family: poppins;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .yesButton {
+            width: 220px;
+            height: 40px;
+            border: 1px solid #BFBFBF;
+            color: #00203B;
+            font-weight: 500;
+            border-radius: 2px;
+            background-color: #ffffff;
+        }
+
+        .yesButton:hover {
+            width: 220px;
+            height: 40px;
+            border: none;
+            background-color: #E4FFF2;
+            color: #0F9D58;
+            font-weight: 500;
+            border-radius: 2px;
+        }
+
+        .noButton {
+            width: 220px;
+            height: 40px;
+            border: 1px solid #BFBFBF;
+            color: #00203B;
+            font-weight: 500;
+            border-radius: 2px;
+            background-color: #ffffff;
+        }
+
+        .noButton:hover {
+            width: 220px;
+            height: 40px;
+            border: none;
+            color: #E32B24;
+            font-weight: 500;
+            border-radius: 2px;
+            background-color: #FFE7E5;
+        }
+
+        .nextButton {
+            width: 220px;
+            height: 40px;
+            border: none;
+            color: #ffffff;
+            font-weight: 500;
+            border-radius: 2px;
+            background-color: #1890FF;
+        }
+
+        .contactButton {
+            width: auto;
+            height: auto;
+            border: 1px solid #1890FF;
+            background-color: white;
+            color: #1890FF;
+            font-weight: 500;
+            border-radius: 2px;
+            text-decoration: none;
+            padding: 0px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-4">
+        <div id="Content" class="text-center title mb-3"> Do it Yourself - Audit your store's search</div>
+        <div class="d-flex">
+            <div class="stepShow">#Step</div>
+            <div id="Steps" class="stepShow">1</div>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex gap-2">
+                <div id="testTitle" class="stepName">Exact searches</div>
+                <div id="infoBanner" class="infoBanner d-flex align-items-center my-2">42% of the sites have this issue
+                </div>
+            </div>
+            <div class="d-flex align-items-end ">
+                <div id="pageCount" class="pageHighlight">1</div>
+                <div class="page mb-2">/8</div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center gap-5 mb-5">
+            <div class="col-lg-6 rounded-2"> <img
+                    src="https://images.fonearena.com/blog/wp-content/uploads/2018/09/Amazon-Mobile-app-Hindi-1024x680.jpg"
+                    alt="" id="questionImage" class="col-lg-12">
+            </div>
+            <div class="col-lg-5">
+                <div class="pageTitle mb-3">Log your Store’s test results</div>
+                <div id="questions">
+                    <form action="">
+                        <div class="mb-4">
+                        <label for="step1Question1" class="question mb-3">1. I searched for the product title. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question1" class="yesButton">
+                            <input type="button" value="No" id="step1Question1" class="noButton">
+                        </div>
+                    </div>
+                        <label for="step1Question2" class="question mb-3">2. I searched for the product model. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question2" class="yesButton">
+                            <input type="button" value="No" id="step1Question2" class="noButton">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- final buttons -->
+        <div class="d-flex justify-content-center gap-4">
+            <button class="contactButton">Contact us to do your Audit (For free)</a>
+            </button>
+            <button onclick="Change()" class="nextButton">Next step</button>
+        </div>
+
+        <script>
+            var maxLimit = 3;
+            function Change() {
+                let steps = document.getElementById("Steps").innerHTML
+                if (steps < maxLimit) {
+                    let newValue = parseInt(steps) + 1;
+                    Steps.innerHTML = newValue
+                    testTitle()
+                } else {
+                    Steps.innerHTML = newValue
+                }
+
+            }
+            function testTitle() {
+                let testTitle = document.getElementById("testTitle")
+                let infoBanner = document.getElementById("infoBanner")
+                let pageCount = document.getElementById("pageCount")
+                let questionImage = document.getElementById("questionImage")
+                let questions = document.getElementById("questions")
+                let option = document.getElementById("Steps").innerHTML
+                switch (option) {
+                    case '1':
+                        testTitle.innerHTML = "Exact search"
+                        infoBanner.innerHTML = "42% of the sites have this issue"
+                        pageCount.innerHTML = option
+                        questionImage.setAttribute('src', 'https://images.fonearena.com/blog/wp-content/uploads/2018/09/Amazon-Mobile-app-Hindi-1024x680.jpg');
+                        questions.innerHTML = `  <form action="">
+                        <div class="mb-4">
+                        <label for="step1Question1" class="question mb-3">1. I searched for the product title. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question1" class="yesButton">
+                            <input type="button" value="No" id="step1Question1" class="noButton">
+                        </div>
+                    </div>
+                        <label for="step1Question2" class="question mb-3">2. I searched for the product model. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question2" class="yesButton">
+                            <input type="button" value="No" id="step1Question2" class="noButton">
+                        </div>
+                    </form>`
+                        break;
+                    case '2':
+                        testTitle.innerHTML = "Product type search"
+                        infoBanner.innerHTML = "71% of the sites have this issue"
+                        pageCount.innerHTML = option
+                        questionImage.setAttribute('src', 'https://m.media-amazon.com/images/G/01/mobile-apps/dex/app-submission/firetv-small-icon-sample._TTH_.png');
+                        questions.innerHTML = ` <form action="">
+                        <div class="mb-4">
+                        <label for="step1Question1" class="question mb-3">1. I searched for the product title. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question1" class="yesButton">
+                            <input type="button" value="No" id="step1Question1" class="noButton">
+                        </div>
+                    </div>
+                        <label for="step1Question2" class="question mb-3">2. I searched for the product model. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question2" class="yesButton">
+                            <input type="button" value="No" id="step1Question2" class="noButton">
+                        </div>
+                    </form>`
+                        break;
+                    case '3':
+                        testTitle.innerHTML = "Symptom search"
+                        infoBanner.innerHTML = "52% of the sites have this issue"
+                        pageCount.innerHTML = option
+                        questionImage.setAttribute('src', 'https://149366088.v2.pressablecdn.com/wp-content/uploads/2017/06/ubuntu-amazon-web-app.png');
+                        questions.innerHTML = `  <form action="">
+                        <div class="mb-4">
+                        <label for="step1Question1" class="question mb-3">1. I searched for the product title. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question1" class="yesButton">
+                            <input type="button" value="No" id="step1Question1" class="noButton">
+                        </div>
+                    </div>
+                        <label for="step1Question2" class="question mb-3">2. I searched for the product model. 1st result on
+                            the search engine got me that
+                            product.</label>
+                        <div class="d-flex flex-column gap-2">
+                            <input type="button" value="Yes" id="step1Question2" class="yesButton">
+                            <input type="button" value="No" id="step1Question2" class="noButton">
+                        </div>
+                    </form>`
+                        break;
+                    default:
+                        console.log('Invalid option');
+                }
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
